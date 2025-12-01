@@ -241,46 +241,7 @@
             color: #ffd700;
         }
 
-        /* Trust Bar */
-        .trust-bar {
-            background: white;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
 
-        .trust-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .trust-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .trust-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #1e3a5f;
-            line-height: 1;
-        }
-
-        .trust-label {
-            color: #666;
-            font-weight: 600;
-        }
-
-        /* Social Proof Section */
-        .social-proof {
-            padding: 80px 2rem;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        }
 
         .section-title {
             text-align: center;
@@ -298,67 +259,6 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .testimonials-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 6px 30px rgba(0,0,0,0.1);
-            position: relative;
-            border-left: 4px solid #4a7c2a;
-        }
-
-        .testimonial-stars {
-            color: #ffd700;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .testimonial-text {
-            font-size: 1.05rem;
-            line-height: 1.7;
-            color: #333;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .testimonial-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #1e3a5f 0%, #4a7c2a 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-
-        .testimonial-info h4 {
-            color: #1e3a5f;
-            font-weight: 700;
-            margin-bottom: 0.2rem;
-        }
-
-        .testimonial-info p {
-            color: #666;
-            font-size: 0.9rem;
         }
 
         /* Results Section */
@@ -746,8 +646,7 @@
             }
 
             .features-grid,
-            .pricing-grid,
-            .testimonials-grid {
+            .pricing-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -786,7 +685,7 @@
                 Aumente a Lucratividade da Sua Fazenda em até <span class="hero-highlight">35%</span>
             </h1>
             <p class="hero-subheadline">
-                Sistema completo de gestão pecuária usado por mais de 560 fazendas em todo o Brasil. 
+                Sistema completo de gestão pecuária para fazendas de todos os tamanhos. 
                 Controle profissional para seu rebanho crescer de forma sustentável.
             </p>
             
@@ -806,80 +705,7 @@
         </div>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
-        <div class="trust-container">
-            <div class="trust-item">
-                <div class="trust-number" data-target="560">0</div>
-                <div class="trust-label">Fazendas Ativas</div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-number" data-target="82300">0</div>
-                <div class="trust-label">Cabeças Gerenciadas</div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-number">98%</div>
-                <div class="trust-label">Taxa de Satisfação</div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-number">24/7</div>
-                <div class="trust-label">Suporte Disponível</div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Social Proof / Testimonials -->
-    <section class="social-proof">
-        <h2 class="section-title">O Que Pecuaristas Estão Dizendo</h2>
-        <p class="section-subtitle">Histórias reais de quem já transformou a gestão da fazenda com AgroMM</p>
-        
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Consegui reduzir custos em 28% e aumentar o GMD do rebanho em apenas 6 meses. 
-                    O sistema é simples e mostra exatamente onde estava perdendo dinheiro. Recomendo!"
-                </p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">JR</div>
-                    <div class="testimonial-info">
-                        <h4>João Roberto Silva</h4>
-                        <p>Fazenda São José - 380 cabeças</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Parei de perder tempo com planilhas e cadernetas. Agora tenho todos os dados 
-                    do rebanho no celular. A taxa de prenhez aumentou 15% com o controle de IATF!"
-                </p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">MC</div>
-                    <div class="testimonial-info">
-                        <h4>Maria Clara Andrade</h4>
-                        <p>Fazenda Boa Vista - 520 cabeças</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Por ser feito por zootecnista, o sistema tem tudo que realmente preciso. 
-                    Controle sanitário impecável e relatórios que fazem sentido. Valeu cada centavo!"
-                </p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">PA</div>
-                    <div class="testimonial-info">
-                        <h4>Pedro Augusto Ferreira</h4>
-                        <p>Fazenda Santa Rita - 750 cabeças</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Results Section -->
     <section class="results-section">
@@ -1160,8 +986,8 @@
         <div class="cta-final-content">
             <h2>Comece Hoje e Transforme Sua Fazenda</h2>
             <p>
-                Junte-se a mais de 560 pecuaristas que já aumentaram seus lucros 
-                e reduziram custos com gestão profissional
+                Transforme a gestão da sua fazenda com tecnologia profissional 
+                e reduza custos enquanto aumenta seus lucros
             </p>
             <a href="https://agromm.mbam.com.br/register" class="cta-primary">
                 COMEÇAR GRÁTIS AGORA
@@ -1265,7 +1091,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.feature-card, .pricing-card, .testimonial-card, .result-card, .faq-item').forEach(el => {
+        document.querySelectorAll('.feature-card, .pricing-card, .result-card, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
