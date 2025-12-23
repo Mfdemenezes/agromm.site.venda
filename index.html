@@ -1133,5 +1133,25 @@
             observer.observe(el);
         });
     </script>
+    
+    <!-- Facebook Pixel Conversion Tracking -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Rastrear cliques em todos os botões de cadastro
+        const registerButtons = document.querySelectorAll('a[href*="agromm.mbam.com.br/register"]');
+        
+        registerButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Disparar evento de conversão do Facebook
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                        content_name: 'Cadastro AgroMM',
+                        content_category: 'Registration'
+                    });
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
