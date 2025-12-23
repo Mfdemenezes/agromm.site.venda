@@ -998,52 +998,54 @@
         </div>
     </section>
 
-    <div class="support-box">
-    <p><strong>📧 E-mail:</strong> suporte@mbam.com.br</p>
-    <p>
-        <strong>📱 WhatsApp:</strong> 
-        <a href="https://api.whatsapp.com/message/R223MAABRHU7N1?autoload=1&app_absent=0" 
-           target="_blank" 
-           class="whatsapp-button">
-            💬 Falar Agora
-        </a>
-    </p>
-    <p><strong>🕐 Horário de Atendimento:</strong> Segunda a Sexta, 8h às 18h</p>
-    <p class="support-note">Resposta em até 24 horas úteis</p>
-</div>
+<!-- Botão Flutuante WhatsApp -->
+<a href="https://api.whatsapp.com/message/R223MAABRHU7N1?autoload=1&app_absent=0" 
+   class="whatsapp-float" 
+   target="_blank"
+   title="Fale comigo no WhatsApp">
+    <svg width="60" height="60" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="30" fill="#25D366"/>
+        <path d="M30.667 14.667C21.76 14.667 14.667 21.76 14.667 30.667c0 2.88.76 5.587 2.08 7.933l-2.16 6.48 6.64-2.133c2.267 1.173 4.827 1.853 7.547 1.853 8.907 0 16-7.093 16-16s-7.093-16-16-16zm8.16 22.4c-.347.96-1.76 1.813-2.88 2.027-.773.16-1.787.293-5.173-.96-4.32-1.6-7.093-5.973-7.307-6.24-.213-.267-1.707-2.267-1.707-4.32 0-2.053 1.067-3.067 1.467-3.493.347-.373.853-.48 1.147-.48.267 0 .533.013.773.027.267.013.64-.107 1 .773.373.907 1.253 3.067 1.36 3.28.107.213.187.48.053.747-.133.267-.213.427-.427.64-.213.213-.427.48-.613.64-.213.187-.427.4-.187.773.24.373.96 1.547 2.027 2.507 1.36 1.227 2.48 1.6 2.88 1.787.373.187.613.16.853-.107.24-.267 1.013-1.173 1.28-1.573.267-.4.533-.347.88-.213.347.133 2.24 1.053 2.613 1.253.373.187.64.267.747.413.107.16.107.88-.24 1.787z" fill="white"/>
+    </svg>
+</a>
 
 <style>
-.support-box {
-    text-align: center;
-    padding: 20px;
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
 }
 
-.support-box p {
-    margin: 10px 0;
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    animation: none;
 }
 
-.whatsapp-button {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 10px;
-    transition: all 0.3s;
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 
-.whatsapp-button:hover {
-    background: #20BA5A;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-}
-
-.support-note {
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: #666;
+/* Responsivo Mobile */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 </style>
 
